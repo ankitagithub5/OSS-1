@@ -21,9 +21,10 @@ namespace CRMWebApp.Controllers
 
         //http://localhost:61541/employees/
         //http://localhost:61541/employees/Details
+        //We get datails of employee class
         public ActionResult Details(int id)
         {
-           Employee employees = HRManager.GetByID(id);
+           //Employee employees = HRManager.GetByID(id);
             return View(employees);
         }
 
